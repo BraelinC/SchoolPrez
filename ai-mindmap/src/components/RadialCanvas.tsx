@@ -9,7 +9,6 @@ import { useUIState } from "@/lib/state";
 import ClusterOrbit from "@/components/ClusterOrbit";
 import ToolCard from "@/components/ToolCard";
 import HUD from "@/components/HUD";
-import Legend from "@/components/Legend";
 
 const clusterColorToBg: Record<string, string> = {
   emerald: "bg-emerald-500",
@@ -48,7 +47,7 @@ export default function RadialCanvas() {
   const { width, height } = useSize(containerRef);
   const cx = width / 2;
   const cy = height / 2;
-  const radius = Math.max(80, Math.min(width, height) * 0.28);
+  const radius = Math.max(100, Math.min(width, height) * 0.35);
 
   const mindmap = dataJson as Mindmap;
   const clusters = mindmap.clusters;
@@ -59,7 +58,7 @@ export default function RadialCanvas() {
   const anchors = computeClusterAnchors(clusters.length, cx, cy, radius, -Math.PI / 2);
 
   return (
-    <div ref={containerRef} className="relative w-full h-[calc(100vh-80px)] md:h-[calc(100vh-100px)] overflow-hidden">
+    <div ref={containerRef} className="relative w-full h-screen overflow-hidden">
       <HUD />
       {/* center pulse */}
       <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -72,11 +71,11 @@ export default function RadialCanvas() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.3 }}
-        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center"
+        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center z-10"
       >
         <button
           onClick={() => selectCluster(null)}
-          className="rounded-full px-6 py-4 bg-zinc-900/70 text-white backdrop-blur text-3xl md:text-5xl font-bold shadow-[0_0_30px_rgba(255,255,255,0.08)] hover:scale-[1.02] transition"
+          className="rounded-full px-8 py-6 bg-zinc-900/90 text-white backdrop-blur text-2xl md:text-4xl font-bold shadow-[0_0_40px_rgba(255,255,255,0.15)] hover:scale-[1.02] transition-all duration-200 border border-white/10"
         >
           {mindmap.title}
         </button>
@@ -112,14 +111,14 @@ export default function RadialCanvas() {
             animate={{ opacity: faded ? 0.2 : 1, scale: isSelected ? 1.05 : 1 }}
             transition={isSelected ? { type: "spring", stiffness: 120, damping: 18 } : { duration: 0.3 }}
             whileHover={{ scale: 1.05 }}
-            className={`absolute -translate-x-1/2 -translate-y-1/2 ${clusterColorToBg[cluster.color] ?? "bg-zinc-700"} text-white rounded-full shadow-[0_0_30px_rgba(255,255,255,0.15)]`}
-            style={{ left: x, top: y, width: 140, height: 140 }}
+            className={`absolute -translate-x-1/2 -translate-y-1/2 ${clusterColorToBg[cluster.color] ?? "bg-zinc-700"} text-white rounded-full shadow-[0_0_30px_rgba(255,255,255,0.15)] border border-white/10`}
+            style={{ left: x, top: y, width: 120, height: 120 }}
             aria-label={cluster.label}
           >
             {/* color halo */}
             <span className={`pointer-events-none absolute inset-0 rounded-full opacity-40 blur-2xl ${cluster.color === "emerald" ? "bg-emerald-200" : cluster.color === "sky" ? "bg-sky-200" : cluster.color === "violet" ? "bg-violet-200" : cluster.color === "amber" ? "bg-amber-200" : "bg-white/20"}`} />
             <span className={`block text-center text-lg font-semibold ${clusterColorToText[cluster.color] ?? "text-white"} drop-shadow`}></span>
-            <span className="block text-center px-4 text-lg font-semibold">
+            <span className="block text-center px-3 text-sm font-semibold leading-tight">
               {cluster.label}
             </span>
           </motion.button>
@@ -155,9 +154,6 @@ export default function RadialCanvas() {
         }
       </AnimatePresence>
 
-      <div className="absolute left-4 bottom-4">
-        <Legend clusters={clusters} />
-      </div>
     </div>
   );
 }
