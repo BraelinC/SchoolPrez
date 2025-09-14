@@ -1,0 +1,141 @@
+{
+  "title": "Is AI Coding for You?",
+  "clusters": [
+    {
+      "id": "environments",
+      "label": "Coding / Building Environments",
+      "color": "emerald",
+      "nodes": [
+        {
+          "id": "replit",
+          "name": "Replit",
+          "tags": ["cloud IDE", "beginner", "teams"],
+          "pricing": {"free": true, "paid": true, "notes": "Core ~$20–25/mo"},
+          "links": {"site": "https://replit.com"},
+          "why_use": "Spin up runnable projects in seconds; great for demos and classrooms.",
+          "best_for": "Beginners, rapid prototyping, teaching."
+        },
+        {
+          "id": "lovable",
+          "name": "Lovable",
+          "tags": ["app builder", "full-stack"],
+          "pricing": {"free": true, "paid": true, "notes": "Check site; likely freemium"},
+          "links": {"site": "https://lovable.dev"},
+          "why_use": "Generate and iterate full apps quickly with AI scaffolding.",
+          "best_for": "Shipping UIs fast; turning ideas into working apps."
+        },
+        {
+          "id": "vibecode",
+          "name": "Vibe Code",
+          "tags": ["mobile", "builder"],
+          "pricing": {"free": true, "paid": true, "notes": "Check site; likely freemium"},
+          "links": {"site": "https://vibecode.app"},
+          "why_use": "Rapid mobile app creation with AI.",
+          "best_for": "Mobile-first MVPs."
+        }
+      ]
+    },
+    {
+      "id": "pairprog",
+      "label": "AI Pair Programmers",
+      "color": "sky",
+      "nodes": [
+        {
+          "id": "codex",
+          "name": "Codex",
+          "tags": ["OpenAI", "code model"],
+          "pricing": {"free": false, "paid": true, "notes": "Usage-based via API where available"},
+          "links": {"site": "https://openai.com"},
+          "why_use": "Model behind early code assistants; shows how LLMs map intent→code.",
+          "best_for": "API demos; historical context."
+        },
+        {
+          "id": "claudecode",
+          "name": "Claude Code",
+          "tags": ["Anthropic", "code"],
+          "pricing": {"free": true, "paid": true, "notes": "Pro ~$20/mo; Max ~$100–200/mo"},
+          "links": {"site": "https://www.anthropic.com"},
+          "why_use": "Strong reasoning, long-context coding sessions.",
+          "best_for": "Explaining legacy code; refactors; test generation."
+        },
+        {
+          "id": "cursor",
+          "name": "Cursor IDE",
+          "tags": ["IDE", "in-editor AI"],
+          "pricing": {"free": true, "paid": true, "notes": "Pro ~$20/mo; high-usage tiers exist"},
+          "links": {"site": "https://cursor.com"},
+          "why_use": "Integrated chat/agents in your editor with repo-aware context.",
+          "best_for": "Daily dev use; repo-scale edits."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "label": "Research & General AI",
+      "color": "violet",
+      "nodes": [
+        {
+          "id": "chatgpt",
+          "name": "ChatGPT",
+          "tags": ["general", "coding"],
+          "pricing": {"free": true, "paid": true, "notes": "Plus ~$20/mo"},
+          "links": {"site": "https://chatgpt.com"},
+          "why_use": "Fast ideation, code snippets, and explanations.",
+          "best_for": "Beginners and broad tasks."
+        },
+        {
+          "id": "claude",
+          "name": "Claude",
+          "tags": ["reasoning", "long context"],
+          "pricing": {"free": true, "paid": true, "notes": "Pro ~$20/mo; Max higher"},
+          "links": {"site": "https://claude.ai"},
+          "why_use": "Exceptional at analysis, polishing, long documents.",
+          "best_for": "Complex reasoning; long inputs."
+        },
+        {
+          "id": "perplexity",
+          "name": "Perplexity",
+          "tags": ["search", "citations"],
+          "pricing": {"free": true, "paid": true, "notes": "Pro ~$20/mo; Max ~$200/mo"},
+          "links": {"site": "https://perplexity.ai"},
+          "why_use": "Grounded answers with sources; great for quick research.",
+          "best_for": "Fact-finding; literature scans."
+        }
+      ]
+    },
+    {
+      "id": "extras",
+      "label": "Extra / Specialized",
+      "color": "amber",
+      "nodes": [
+        {
+          "id": "notebooklm",
+          "name": "NotebookLM",
+          "tags": ["study", "RAG", "notes"],
+          "pricing": {"free": true, "paid": true, "notes": "Google One AI Premium often ~$19.99/mo; student promos exist"},
+          "links": {"site": "https://notebooklm.google"},
+          "why_use": "Learn from your own sources; quizzes, outlines, mind-maps.",
+          "best_for": "Study packs; course summaries."
+        },
+        {
+          "id": "ai_studio",
+          "name": "Google AI Studio",
+          "tags": ["playground", "Gemini"],
+          "pricing": {"free": true, "paid": true, "notes": "Usage-based for higher tiers"},
+          "links": {"site": "https://aistudio.google.com"},
+          "why_use": "Test Google models; quick prototypes.",
+          "best_for": "Prompts, small demos."
+        },
+        {
+          "id": "comet",
+          "name": "Perplexity Comet (Browser)",
+          "tags": ["browser", "Max"],
+          "pricing": {"free": false, "paid": true, "notes": "Typically in Perplexity Max ~$200/mo"},
+          "links": {"site": "https://www.perplexity.ai"},
+          "why_use": "Search-native browser with AI copiloting.",
+          "best_for": "Live research in class."
+        }
+      ]
+    }
+  ]
+}
