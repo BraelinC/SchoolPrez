@@ -86,10 +86,10 @@ export default function ToolCard({
       animate={{ y: 0, opacity: 1 }}
       exit={{ y: 20, opacity: 0 }}
       transition={{ duration: 0.25 }}
-      className="fixed top-4 right-4 w-[380px] z-40"
+      className="fixed top-[1vh] right-[1vw] w-[23vw] min-w-[300px] max-w-[400px] z-40"
       aria-live="polite"
     >
-      <div className="rounded-2xl bg-zinc-950/90 backdrop-blur text-white border border-zinc-800 shadow-2xl p-4 md:p-6">
+      <div className="rounded-2xl bg-zinc-950/90 backdrop-blur text-white border border-zinc-800 shadow-2xl p-4 lg:p-[1.2vw]">
         <div className="flex items-start justify-between gap-3">
           <div>
             <div className="text-lg md:text-xl font-semibold">{tool.name}</div>

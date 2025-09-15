@@ -91,7 +91,7 @@ export default function RadialCanvas() {
   const anchors = computeClusterAnchors(clusters.length, cx, cy, radius, -Math.PI / 2);
 
   return (
-    <div ref={containerRef} className="relative w-full h-screen overflow-hidden">
+    <div ref={containerRef} className="relative w-full min-h-screen">
       <HUD />
       {/* centered comparison only on second click */}
       {selectedCluster && centerCompare && !selectedToolId && (

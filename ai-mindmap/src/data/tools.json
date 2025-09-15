@@ -10,7 +10,7 @@
           "id": "replit",
           "name": "Replit",
           "tags": ["cloud IDE", "beginner", "teams"],
-          "pricing": {"free": false, "paid": true, "notes": "Core ~$20–25/mo"},
+          "pricing": {"free": false, "paid": true, "notes": "$25/mo"},
           "links": {"site": "https://replit.com"},
           "why_use": "Spin up runnable projects in seconds; great for demos and classrooms.",
           "best_for": "Beginners, rapid prototyping, teaching.",
@@ -26,7 +26,7 @@
             "Focus on web apps/PWAs, not native mobile"
           ],
           "bullets": [
-            "AI-powered Agent � can build, test, and fix apps with browser testing",
+            "AI-powered Agent — can build, test, and fix apps with browser testing",
             "Good interactions for beginners",
             "Build web apps quickly"
           ]
@@ -40,7 +40,7 @@
           "why_use": "Generate and iterate full apps quickly with AI scaffolding.",
           "best_for": "Shipping UIs fast; turning ideas into working apps.",
           "pros": [
-            "Chat-based development; beginner friendly",
+            "Chat-based development; user friendly",
             "Generates beautiful, responsive web apps with backends",
             "Figma and Supabase integrations",
             "Great for fast iteration and prototyping"
@@ -52,15 +52,7 @@
             "Customization is more limited"
           ],
           "bullets": [
-            "Full‑stack app generation from natural language prompts",
-            "Up to 20× faster development than hand‑coding",
-            "Real code output — React, Tailwind, Vite, backends",
-            "GitHub ownership — export and own your codebase",
-            "Mobile builder redesign — create/edit from phone",
-            "Supabase integration — automatic DB + auth",
-            "Security scanning — AI vulnerability detection",
-            "Pricing: Free (limited messages), Pro (message‑based)",
-            "2025: $200M Series A, 2.3M MAU, Dev Mode for paid users"
+            "Fast MVP and UI"
           ]
         },
         {
@@ -96,7 +88,7 @@
           "id": "codex",
           "name": "Codex",
           "tags": ["OpenAI", "code model"],
-          "pricing": {"free": false, "paid": true, "notes": "Included with ChatGPT ~$20/mo"},
+          "pricing": {"free": false, "paid": true, "notes": "Included with ChatGPT $20/mo"},
           "links": {"site": "https://openai.com"},
           "why_use": "Recently getting revamped so will get better.",
           "best_for": "Great for cost",
@@ -117,7 +109,7 @@
           "id": "claudecode",
           "name": "Claude Code",
           "tags": ["Anthropic", "code"],
-          "pricing": {"free": false, "paid": true, "notes": "Included with Claude ~$20/mo"},
+          "pricing": {"free": false, "paid": true, "notes": "Included with Claude $20/mo"},
           "links": {"site": "https://claude.ai"},
           "why_use": "Strong reasoning, long-context coding sessions.",
           "best_for": "Very versatile",
@@ -126,25 +118,20 @@
             "Superior contextual understanding; can work autonomously"
           ],
           "cons": [
-            "Expensive for students",
             "3-hour usage windows and resets",
             "Occasional hallucinations",
             "CLI can be intimidating for beginners"
           ],
           "bullets": [
-            "Long‑context sessions for large codebases",
-            "Strong reasoning and explanations",
-            "Automated high‑quality test generation",
-            "Repository awareness for multi‑file edits",
-            "Access to Opus/Sonnet; deep reasoning modes",
-            "Pricing: Pro ~$20/mo; Max ~$100–200/mo"
+            "Good at fast changes compared to Codex and Cursor",
+            "Better prompt, better output — be smart and careful with this tool"
           ]
         },
         {
           "id": "cursor",
           "name": "Cursor IDE",
           "tags": ["IDE", "in-editor AI"],
-          "pricing": {"free": false, "paid": true, "notes": "Pro ~$20/mo; high-usage tiers exist"},
+          "pricing": {"free": false, "paid": true, "notes": "Pro $20/mo; high-usage tiers exist"},
           "links": {"site": "https://cursor.com"},
           "why_use": "Integrated chat/agents in your editor with repo-aware context.",
           "best_for": "Daily dev use; repo-scale edits.",
@@ -180,39 +167,33 @@
           "id": "chatgpt",
           "name": "ChatGPT",
           "tags": ["general", "coding"],
-          "pricing": {"free": false, "paid": true, "notes": "Plus ~$20/mo"},
+          "pricing": {"free": false, "paid": true, "notes": "Plus $20/mo"},
           "links": {"site": "https://chatgpt.com"},
           "why_use": "Fast ideation, code snippets, and explanations.",
-          "best_for": "Beginners and broad tasks.",
+          "best_for": "Broad tasks.",
           "pros": [
             "Most comprehensive platform with Custom GPTs",
             "Great general-purpose help across subjects",
-            "Works well with Codex coding support"
+            "Includes Codex"
           ],
           "cons": [
             "Pro tier needed for advanced features"
           ],
           "bullets": [
-            "GPT‑5 default with automatic reasoning",
-            "45% fewer factual errors with web search",
-            "Advanced voice; tool integration (browse, Python, files, images)",
-            "Agent for search/browsing; strong task accuracy",
-            "Multiple model access for Pro users",
-            "Free tier available",
-            "2025: GPT‑5, o3/o4‑mini, rebuilt safety, agent capabilities"
+            "Chat app",
+            "Good for ideation"
           ]
         },
         {
           "id": "claude",
           "name": "Claude",
           "tags": ["reasoning", "long context"],
-          "pricing": {"free": false, "paid": true, "notes": "Pro ~$20/mo; Max higher"},
+          "pricing": {"free": false, "paid": true, "notes": "Pro $20/mo; Max higher"},
           "links": {"site": "https://claude.ai"},
           "why_use": "Exceptional at analysis, polishing, long documents.",
           "best_for": "Complex reasoning; long inputs.",
           "pros": [
-            "Superior writing for long-form academic work",
-            "Strong reasoning and analysis"
+            "Best at writing compared to all AI tools"
           ],
           "cons": [
             "Chat interface is fairly minimal"
@@ -223,15 +204,14 @@
             "Excellent long‑context analysis",
             "Tool use during thinking (e.g., web search)",
             "Multi‑platform access: web, iOS, Android, API",
-            "Pricing: Free tier, Pro/Max, API $/tokens",
-            "2025: Opus/Sonnet 4 releases, web search, hybrid modes"
+            "Pricing: Free tier, Pro/Max, API $/tokens"
           ]
         },
         {
           "id": "perplexity",
           "name": "Perplexity",
           "tags": ["search", "citations"],
-          "pricing": {"free": false, "paid": true, "notes": "Pro ~$20/mo; Max ~$200/mo"},
+          "pricing": {"free": false, "paid": true, "notes": "Pro $20/mo; Max $200/mo"},
           "links": {"site": "https://perplexity.ai"},
           "why_use": "Grounded answers with sources; great for quick research.",
           "best_for": "Fact-finding; literature scans.",
@@ -247,13 +227,8 @@
             "Customization options are limited"
           ],
           "bullets": [
-            "AI‑powered search with cited sources",
-            "780M queries (May 2025); rapid growth",
-            "Comet Browser for Max subscribers",
-            "Comet Assistant automates clicking and navigation",
-            "Great for real‑time information and research",
-            "Pricing: Pro $20/mo, Max $200/mo (with Comet)",
-            "2025: Comet launch, advanced Max tier, browser automation"
+            "Good for finding up-to-date resources",
+            "Good for helping learn and find things on AI since it's moving so fast"
           ]
         }
       ]
@@ -267,14 +242,14 @@
           "id": "notebooklm",
           "name": "NotebookLM",
           "tags": ["study", "RAG", "notes"],
-          "pricing": {"free": true, "paid": false, "notes": "Google One AI Premium often ~$19.99/mo; student promos exist"},
+          "pricing": {"free": true, "paid": false, "notes": "Google One AI Premium often $19.99/mo"},
           "links": {"site": "https://notebooklm.google"},
           "why_use": "Learn from your own sources; quizzes, outlines, mind-maps.",
-          "best_for": "Study packs; course summaries.",
+          "best_for": "Learning from documents; content summaries.",
           "pros": [
             "Only uses your uploaded docs (reduces hallucinations)",
             "Audio Overview turns materials into a podcast",
-            "Great for studying from course materials"
+            "Great for learning from any materials"
           ],
           "cons": [
             "Limited to documents you provide",
@@ -287,7 +262,7 @@
             "Personal tutoring with step‑by‑step breakdowns",
             "OpenStax partnership for ready notebooks",
             "Multi‑language support (35+ languages, 180+ regions)",
-            "Pricing: Free with Google One AI Premium (~$19.99/mo)",
+            "Pricing: Free with Google One AI Premium ($19.99/mo)",
             "2025: Video Overviews, interactive maps, customizable difficulty"
           ]
         },
@@ -320,7 +295,7 @@
           "id": "comet",
           "name": "Perplexity Comet (Browser)",
           "tags": ["browser", "Max"],
-          "pricing": {"free": false, "paid": true, "notes": "Included with Perplexity ~$20/mo"},
+          "pricing": {"free": false, "paid": true, "notes": "Included with Perplexity $20/mo"},
           "links": {"site": "https://www.perplexity.ai/comet"},
           "why_use": "Search-native browser with AI copiloting.",
           "best_for": "Live research in class.",
@@ -334,13 +309,7 @@
             "Better alternatives exist for research needs"
           ],
           "bullets": [
-            "AI‑native Chromium browser with extension support",
-            "Browser automation — assistant clicks and navigates",
-            "Max subscriber exclusive ($200/mo)",
-            "Desktop only for now; mobile in development",
-            "Optimized for live research and academic work",
-            "Perplexity search as default",
-            "2025: Initial launch; plans for mobile; potential pre‑installation"
+            "Use Perplexity as AI browser just like Perplexity rather than regular Google search"
           ]
         }
       ]
