@@ -10,28 +10,80 @@
           "id": "replit",
           "name": "Replit",
           "tags": ["cloud IDE", "beginner", "teams"],
-          "pricing": {"free": true, "paid": true, "notes": "Core ~$20–25/mo"},
+          "pricing": {"free": false, "paid": true, "notes": "Core ~$20–25/mo"},
           "links": {"site": "https://replit.com"},
           "why_use": "Spin up runnable projects in seconds; great for demos and classrooms.",
-          "best_for": "Beginners, rapid prototyping, teaching."
+          "best_for": "Beginners, rapid prototyping, teaching.",
+          "pros": [
+            "Cloud-based IDE with 50+ languages; zero setup",
+            "AI Agent generates complete apps from natural language",
+            "Runs entirely in browser on any device",
+            "Can work on phone and computer simultaneously"
+          ],
+          "cons": [
+            "Free tier limitations for serious projects",
+            "Can be expensive for heavy usage",
+            "Focus on web apps/PWAs, not native mobile"
+          ],
+          "bullets": [
+            "AI-powered Agent � can build, test, and fix apps with browser testing",
+            "Good interactions for beginners",
+            "Build web apps quickly"
+          ]
         },
         {
           "id": "lovable",
           "name": "Lovable",
           "tags": ["app builder", "full-stack"],
-          "pricing": {"free": true, "paid": true, "notes": "Check site; likely freemium"},
+          "pricing": {"free": false, "paid": true, "notes": "Check site; likely freemium"},
           "links": {"site": "https://lovable.dev"},
           "why_use": "Generate and iterate full apps quickly with AI scaffolding.",
-          "best_for": "Shipping UIs fast; turning ideas into working apps."
+          "best_for": "Shipping UIs fast; turning ideas into working apps.",
+          "pros": [
+            "Chat-based development; beginner friendly",
+            "Generates beautiful, responsive web apps with backends",
+            "Figma and Supabase integrations",
+            "Great for fast iteration and prototyping"
+          ],
+          "cons": [
+            "Web-only focus; no native mobile",
+            "Credits can burn quickly on complex projects",
+            "Less control over structure vs traditional IDEs",
+            "Customization is more limited"
+          ],
+          "bullets": [
+            "Full‑stack app generation from natural language prompts",
+            "Up to 20× faster development than hand‑coding",
+            "Real code output — React, Tailwind, Vite, backends",
+            "GitHub ownership — export and own your codebase",
+            "Mobile builder redesign — create/edit from phone",
+            "Supabase integration — automatic DB + auth",
+            "Security scanning — AI vulnerability detection",
+            "Pricing: Free (limited messages), Pro (message‑based)",
+            "2025: $200M Series A, 2.3M MAU, Dev Mode for paid users"
+          ]
         },
         {
           "id": "vibecode",
           "name": "Vibe Code",
           "tags": ["mobile", "builder"],
-          "pricing": {"free": true, "paid": true, "notes": "Check site; likely freemium"},
+          "pricing": {"free": false, "paid": true, "notes": "Check site; likely freemium"},
           "links": {"site": "https://vibecode.app"},
           "why_use": "Rapid mobile app creation with AI.",
-          "best_for": "Mobile-first MVPs."
+          "best_for": "Mobile-first MVPs.",
+          "pros": [
+            "Specialized for building mobile apps"
+          ],
+          "cons": [
+            "Very new; not battle-tested"
+          ],
+          "bullets": [
+            "Mobile‑first app builder for rapid creation",
+            "AI‑powered UI and functionality generation",
+            "Cross‑platform support for iOS and Android",
+            "Rapid prototyping for mobile MVPs",
+            "Freemium model with paid upgrades"
+          ]
         }
       ]
     },
@@ -44,28 +96,78 @@
           "id": "codex",
           "name": "Codex",
           "tags": ["OpenAI", "code model"],
-          "pricing": {"free": false, "paid": true, "notes": "Usage-based via API where available"},
+          "pricing": {"free": false, "paid": true, "notes": "Included with ChatGPT ~$20/mo"},
           "links": {"site": "https://openai.com"},
-          "why_use": "Model behind early code assistants; shows how LLMs map intent→code.",
-          "best_for": "API demos; historical context."
+          "why_use": "Recently getting revamped so will get better.",
+          "best_for": "Great for cost",
+          "pros": [
+            "Great value bundled with ChatGPT Plus",
+            "Good for coding assistance without strict usage limits"
+          ],
+          "cons": [
+            "Basic UI compared to dedicated IDE experiences"
+          ],
+          "bullets": [
+            "Works like Cursor Agent but you get very high usage for $20/month",
+            "While Cursor makes you pay for usage, Codex gives generous limits",
+            "Shows intent‑to‑code mapping"
+          ]
         },
         {
           "id": "claudecode",
           "name": "Claude Code",
           "tags": ["Anthropic", "code"],
-          "pricing": {"free": true, "paid": true, "notes": "Pro ~$20/mo; Max ~$100–200/mo"},
-          "links": {"site": "https://www.anthropic.com"},
+          "pricing": {"free": false, "paid": true, "notes": "Included with Claude ~$20/mo"},
+          "links": {"site": "https://claude.ai"},
           "why_use": "Strong reasoning, long-context coding sessions.",
-          "best_for": "Explaining legacy code; refactors; test generation."
+          "best_for": "Very versatile",
+          "pros": [
+            "CLI tool for direct control",
+            "Superior contextual understanding; can work autonomously"
+          ],
+          "cons": [
+            "Expensive for students",
+            "3-hour usage windows and resets",
+            "Occasional hallucinations",
+            "CLI can be intimidating for beginners"
+          ],
+          "bullets": [
+            "Long‑context sessions for large codebases",
+            "Strong reasoning and explanations",
+            "Automated high‑quality test generation",
+            "Repository awareness for multi‑file edits",
+            "Access to Opus/Sonnet; deep reasoning modes",
+            "Pricing: Pro ~$20/mo; Max ~$100–200/mo"
+          ]
         },
         {
           "id": "cursor",
           "name": "Cursor IDE",
           "tags": ["IDE", "in-editor AI"],
-          "pricing": {"free": true, "paid": true, "notes": "Pro ~$20/mo; high-usage tiers exist"},
+          "pricing": {"free": false, "paid": true, "notes": "Pro ~$20/mo; high-usage tiers exist"},
           "links": {"site": "https://cursor.com"},
           "why_use": "Integrated chat/agents in your editor with repo-aware context.",
-          "best_for": "Daily dev use; repo-scale edits."
+          "best_for": "Daily dev use; repo-scale edits.",
+          "pros": [
+            "Free Pro for students (1 year)",
+            "VS Code-based; familiar UI",
+            "Multiple models; agent mode for autonomous edits",
+            "Composer for project-wide refactors",
+            "Smart indexing for large repos"
+          ],
+          "cons": [
+            "Overwhelming for complete beginners",
+            "Advanced features have a learning curve"
+          ],
+          "bullets": [
+            "AI‑first code editor with agent capabilities",
+            "Access to latest models (Claude, o3/o4‑mini, GPT‑4.1, Gemini)",
+            "VS Code‑compatible layout and shortcuts",
+            "Auto‑fix errors and preview changes",
+            "Multi‑file awareness; faster tab completion",
+            "Pricing: Free, Pro $20/mo, Pro Plus $60/mo, Ultra $200/mo",
+            "2025: New pricing, o4‑mini free access, enhanced tab completion"
+          ]
         }
       ]
     },
@@ -78,28 +180,81 @@
           "id": "chatgpt",
           "name": "ChatGPT",
           "tags": ["general", "coding"],
-          "pricing": {"free": true, "paid": true, "notes": "Plus ~$20/mo"},
+          "pricing": {"free": false, "paid": true, "notes": "Plus ~$20/mo"},
           "links": {"site": "https://chatgpt.com"},
           "why_use": "Fast ideation, code snippets, and explanations.",
-          "best_for": "Beginners and broad tasks."
+          "best_for": "Beginners and broad tasks.",
+          "pros": [
+            "Most comprehensive platform with Custom GPTs",
+            "Great general-purpose help across subjects",
+            "Works well with Codex coding support"
+          ],
+          "cons": [
+            "Pro tier needed for advanced features"
+          ],
+          "bullets": [
+            "GPT‑5 default with automatic reasoning",
+            "45% fewer factual errors with web search",
+            "Advanced voice; tool integration (browse, Python, files, images)",
+            "Agent for search/browsing; strong task accuracy",
+            "Multiple model access for Pro users",
+            "Free tier available",
+            "2025: GPT‑5, o3/o4‑mini, rebuilt safety, agent capabilities"
+          ]
         },
         {
           "id": "claude",
           "name": "Claude",
           "tags": ["reasoning", "long context"],
-          "pricing": {"free": true, "paid": true, "notes": "Pro ~$20/mo; Max higher"},
+          "pricing": {"free": false, "paid": true, "notes": "Pro ~$20/mo; Max higher"},
           "links": {"site": "https://claude.ai"},
           "why_use": "Exceptional at analysis, polishing, long documents.",
-          "best_for": "Complex reasoning; long inputs."
+          "best_for": "Complex reasoning; long inputs.",
+          "pros": [
+            "Superior writing for long-form academic work",
+            "Strong reasoning and analysis"
+          ],
+          "cons": [
+            "Chat interface is fairly minimal"
+          ],
+          "bullets": [
+            "Opus 4 and Sonnet 4 — top coding scores",
+            "Hybrid reasoning modes (instant vs extended)",
+            "Excellent long‑context analysis",
+            "Tool use during thinking (e.g., web search)",
+            "Multi‑platform access: web, iOS, Android, API",
+            "Pricing: Free tier, Pro/Max, API $/tokens",
+            "2025: Opus/Sonnet 4 releases, web search, hybrid modes"
+          ]
         },
         {
           "id": "perplexity",
           "name": "Perplexity",
           "tags": ["search", "citations"],
-          "pricing": {"free": true, "paid": true, "notes": "Pro ~$20/mo; Max ~$200/mo"},
+          "pricing": {"free": false, "paid": true, "notes": "Pro ~$20/mo; Max ~$200/mo"},
           "links": {"site": "https://perplexity.ai"},
           "why_use": "Grounded answers with sources; great for quick research.",
-          "best_for": "Fact-finding; literature scans."
+          "best_for": "Fact-finding; literature scans.",
+          "pros": [
+            "Excellent research tool with citations",
+            "Deep Research for autonomous literature reviews",
+            "Great for specific code issues and up-to-date info",
+            "Saves time on research"
+          ],
+          "cons": [
+            "Coding help lags behind specialized tools",
+            "Can get expensive for heavy use",
+            "Customization options are limited"
+          ],
+          "bullets": [
+            "AI‑powered search with cited sources",
+            "780M queries (May 2025); rapid growth",
+            "Comet Browser for Max subscribers",
+            "Comet Assistant automates clicking and navigation",
+            "Great for real‑time information and research",
+            "Pricing: Pro $20/mo, Max $200/mo (with Comet)",
+            "2025: Comet launch, advanced Max tier, browser automation"
+          ]
         }
       ]
     },
@@ -112,30 +267,84 @@
           "id": "notebooklm",
           "name": "NotebookLM",
           "tags": ["study", "RAG", "notes"],
-          "pricing": {"free": true, "paid": true, "notes": "Google One AI Premium often ~$19.99/mo; student promos exist"},
+          "pricing": {"free": true, "paid": false, "notes": "Google One AI Premium often ~$19.99/mo; student promos exist"},
           "links": {"site": "https://notebooklm.google"},
           "why_use": "Learn from your own sources; quizzes, outlines, mind-maps.",
-          "best_for": "Study packs; course summaries."
+          "best_for": "Study packs; course summaries.",
+          "pros": [
+            "Only uses your uploaded docs (reduces hallucinations)",
+            "Audio Overview turns materials into a podcast",
+            "Great for studying from course materials"
+          ],
+          "cons": [
+            "Limited to documents you provide",
+            "Basic free version has fewer features"
+          ],
+          "bullets": [
+            "Creates flashcards, quizzes, learning guides from your docs",
+            "Video Overviews and Audio Overviews",
+            "Interactive Mind Maps for exploring topics",
+            "Personal tutoring with step‑by‑step breakdowns",
+            "OpenStax partnership for ready notebooks",
+            "Multi‑language support (35+ languages, 180+ regions)",
+            "Pricing: Free with Google One AI Premium (~$19.99/mo)",
+            "2025: Video Overviews, interactive maps, customizable difficulty"
+          ]
         },
         {
           "id": "ai_studio",
           "name": "Google AI Studio",
           "tags": ["playground", "Gemini"],
-          "pricing": {"free": true, "paid": true, "notes": "Usage-based for higher tiers"},
+          "pricing": {"free": true, "paid": false, "notes": "Usage-based for higher tiers"},
           "links": {"site": "https://aistudio.google.com"},
           "why_use": "Test Google models; quick prototypes.",
-          "best_for": "Prompts, small demos."
+          "best_for": "Prompts, small demos.",
+          "pros": [
+            "1 year free for students",
+            "Access to latest Google models",
+            "Integrates with Google Workspace"
+          ],
+          "cons": [
+            "After trial, charges apply"
+          ],
+          "bullets": [
+            "Gemini model playground for quick testing",
+            "Rapid prototyping — prompt to app",
+            "Simple API integration for production",
+            "Compare Gemini variants side‑by‑side",
+            "Educational tool for prompt engineering",
+            "Pricing: Free tier; usage‑based scaling for higher volumes"
+          ]
         },
         {
           "id": "comet",
           "name": "Perplexity Comet (Browser)",
           "tags": ["browser", "Max"],
-          "pricing": {"free": false, "paid": true, "notes": "Typically in Perplexity Max ~$200/mo"},
-          "links": {"site": "https://www.perplexity.ai"},
+          "pricing": {"free": false, "paid": true, "notes": "Included with Perplexity ~$20/mo"},
+          "links": {"site": "https://www.perplexity.ai/comet"},
           "why_use": "Search-native browser with AI copiloting.",
-          "best_for": "Live research in class."
+          "best_for": "Live research in class.",
+          "pros": [
+            "AI-native browsing experience",
+            "Automated web interactions",
+            "Innovative web navigation"
+          ],
+          "cons": [
+            "Best paired with Pro subscription",
+            "Better alternatives exist for research needs"
+          ],
+          "bullets": [
+            "AI‑native Chromium browser with extension support",
+            "Browser automation — assistant clicks and navigates",
+            "Max subscriber exclusive ($200/mo)",
+            "Desktop only for now; mobile in development",
+            "Optimized for live research and academic work",
+            "Perplexity search as default",
+            "2025: Initial launch; plans for mobile; potential pre‑installation"
+          ]
         }
       ]
     }
   ]
 }
+

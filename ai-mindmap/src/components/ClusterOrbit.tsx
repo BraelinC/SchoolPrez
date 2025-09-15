@@ -28,10 +28,11 @@ export default function ClusterOrbit({
     <div className="pointer-events-none">
       {cluster.nodes.map((tool, i) => {
         const pos = positions[i];
+        // No icon in orbit buttons per request
         return (
           <motion.button
             key={tool.id}
-            className="pointer-events-auto absolute -translate-x-1/2 -translate-y-1/2 rounded-full bg-zinc-900/80 text-white px-3 py-2 shadow-[0_0_30px_rgba(0,0,0,0.3)] hover:scale-105 transition"
+            className="pointer-events-auto absolute -translate-x-1/2 -translate-y-1/2 rounded-full bg-zinc-900/80 text-white px-3 py-2 shadow-[0_0_30px_rgba(0,0,0,0.3)] hover:scale-105 transition z-20"
             style={{ left: pos.point.x, top: pos.point.y }}
             initial={{ opacity: 0, y: 4 }}
             animate={{ opacity: 1, y: 0 }}
